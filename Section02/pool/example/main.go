@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/agtorre/go-solutions/section2/pool"
+	".."
 )
 
 func main() {

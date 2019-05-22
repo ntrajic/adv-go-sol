@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/agtorre/go-solutions/section4/graphql/cards"
+	"../cards"
 	"github.com/graphql-go/graphql"
 )
 
@@ -15,8 +15,8 @@ func main() {
 		panic(err)
 	}
 
+	{
 	query := `
-		{
 			cards(value: "A"){
 				value
 				suit

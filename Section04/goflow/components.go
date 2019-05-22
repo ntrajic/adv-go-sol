@@ -8,9 +8,9 @@ import (
 )
 
 type Encoder struct {
-	flow.Component
-	Val <-chan string
-	Res chan<- string
+flow.Component
+Val <-chan string
+Res chan<- string
 }
 
 func (e *Encoder) OnVal(val string) {

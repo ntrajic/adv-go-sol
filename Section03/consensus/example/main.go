@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/agtorre/go-solutions/section3/consensus"
+	".."
 )
 
 func main() {

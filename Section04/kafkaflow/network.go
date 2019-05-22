@@ -8,10 +8,13 @@ type UpperApp struct {
 
 func NewUpperApp() *UpperApp {
 	u := &UpperApp{}
-	u.InitGraphState()
+	//u.InitGraphState()
 
-	u.Add(&Upper{}, "upper")
-	u.Add(&Printer{}, "printer")
+	//u.Add(&Upper{}, "upper")
+	//u.Add(&Printer{}, "printer")
+
+	u.Add( "Upper", "upper")
+	u.Add( "Printer", "printer")
 
 	u.Connect("upper", "Res", "printer", "Line")
 	u.MapInPort("In", "upper", "Val")

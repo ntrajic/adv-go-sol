@@ -2,6 +2,7 @@ package goflow
 
 import "testing"
 
+
 func TestNewEncodingApp(t *testing.T) {
 	tests := []struct {
 		name string

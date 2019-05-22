@@ -3,8 +3,9 @@ package main
 import (
 	"golang.org/x/net/context"
 	"time"
-
-	"github.com/agtorre/go-solutions/section2/channels"
+	
+	".."
+//"github.com/agtorre/go-solutions/section2/channels"
 )
 
 func main() {

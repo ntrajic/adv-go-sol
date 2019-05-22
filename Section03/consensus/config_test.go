@@ -13,7 +13,7 @@ func TestConfig(t *testing.T) {
 		{"base-case", args{3}},
 	}
 	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
+		run := t.Run(tt.name, func(t *testing.T) {
 			Config(tt.args.num)
 		})
 	}

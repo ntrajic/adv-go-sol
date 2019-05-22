@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/agtorre/go-solutions/section5/firebase"
+	".."
 )
 
 func main() {

@@ -7,11 +7,15 @@ type EncodingApp struct {
 }
 
 func NewEncodingApp() *EncodingApp {
+	//e :=  &EncodingApp{}
 	e := &EncodingApp{}
-	e.InitGraphState()
 
-	e.Add(&Encoder{}, "encoder")
-	e.Add(&Printer{}, "printer")
+	//e.InitGraphState()
+
+	e.Add("Encoder", "encoder")
+	e.Add("Printer", "printer")
+	//e.Add(&Encoder{}, "encoder")
+	//e.Add(&Printer{}, "printer")
 
 	e.Connect("encoder", "Res", "printer", "Line")
 	e.MapInPort("In", "encoder", "Val")

@@ -21,6 +21,6 @@ func Printer(ctx context.Context, ch chan string) {
 	}
 }
 
-select{
- case <-time.Tick(200 * time.Millisecond):
-}
+//select{
+// case <-time.Tick(200 * time.Millisecond):
+//}

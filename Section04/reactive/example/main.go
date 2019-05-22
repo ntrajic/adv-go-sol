@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/agtorre/go-solutions/section4/reactive"
+	".."
 )
 
 func main() {
 	results, sub := reactive.Exec()
 
+	// wait for the channel to emit subscription
 	<-sub
 
 	for key, val := range results {
